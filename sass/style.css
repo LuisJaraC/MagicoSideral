@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "LetraFuente";
+  src: url("../fuente/NovaMono-Regular.ttf");
+}
+/***************************************************/
+body {
+  font-family: "LetraFuente";
+  background-color: rgba(100, 81, 240, 0.522);
+  font-size: 1rem;
+}
+
+.cabecera .nav {
+  background-color: rgb(12, 12, 61);
+}
+.cabecera .nav .LogoTienda {
+  width: 115px;
+  height: auto;
+  border-radius: 50%;
+  margin: 50px 50px 0px 50px;
+}
+.cabecera .nav .letra-logo {
+  font-family: "LetraFuente";
+  color: rgb(255, 255, 255);
+  margin-left: 50px;
+  text-decoration: none;
+}
+.cabecera .nav .navegacion {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  background-image: url("../img/banner.avif");
+  background-size: 100%;
+  font-size: 2rem;
+}
+.cabecera .nav .navegacion .nav-a {
+  text-decoration: none;
+}
+
+/***************************************************/
+/*index-main*/
+.titulopag {
+  margin: 0 center;
+  text-align: center;
+  background-image: url("../img/banner.avif");
+  background-size: 100%;
+  padding-top: 50px;
+}
+
+.secord {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.secord .ImagenDestacada {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(29, 7, 172, 0.505);
+  border-radius: 10px;
+  margin-top: 150px;
+}
+.secord .Piedefoto {
+  text-align: center;
+}
+.secord .Linkfoto {
+  text-align: center;
+  margin-left: 75px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+.secord .Linkfoto a:visited {
+  color: gray;
+}
+.secord .Linkfoto a:hover {
+  color: white;
+}
+
+/***************************************************/
+/*footer*/
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  background-image: url("../img/banner.avif");
+  padding-bottom: 1rem;
+}
+.footer .derechos {
+  color: white;
+  font-size: 1rem;
+}
+.footer .arriba {
+  font-size: 1rem;
+}
+.footer .insta {
+  font-size: 1rem;
+}
+
+/***************************************************/
+/*Quienes somos*/
+.flexxx {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flexxx .quienessomos {
+  margin: 0 center;
+  text-align: center;
+}
+.flexxx .moch {
+  text-align: center;
+}
+.flexxx .moch .mochila1 {
+  height: 35rem;
+  width: 35rem;
+  border-radius: 20px;
+}
+.flexxx .ord_qu2 {
+  text-align: center;
+}
+.flexxx .finalquienes {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  .flexxx {
+    display: grid;
+    grid-template-rows: 0fr 1fr 0fr 1fr;
+  }
+}
+@media (max-width: 570px) {
+  .flexxx {
+    display: grid;
+    grid-template-rows: 0fr 1fr 0fr 1fr;
+    justify-items: center;
+  }
+}
+/***************************************************/
+/*Pins*/
+.titpins {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.secord-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.secord-1 .ventapins {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.secord-1 .ventapins .orderpins {
+  margin: 75px;
+}
+.secord-1 .ventapins .orderpins .imgpin {
+  height: 15rem;
+  width: 15rem;
+  background-color: rgba(29, 7, 172, 0.505);
+  border-radius: 10px;
+}
+.secord-1 .ventapins .orderpins .cenpin {
+  text-align: center;
+}
+.secord-1 .ventapins .orderpins .link-pinsv {
+  text-align: center;
+  margin-left: 75px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+/***************************************************/
+/*Sublimacion*/
+.togglenav {
+  margin: 50px 0px 0px 50px;
+}
+.togglenav .navto {
+  margin-right: 50px;
+}
+.togglenav .navt {
+  margin-right: 50px;
+}
+
+.Parches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: space-evenly;
+}
+.Parches .titulosubli {
+  margin-top: 50px;
+  text-align: center;
+}
+.Parches .orderpar {
+  display: inline-block;
+  margin-inline: 40px;
+}
+.Parches .orderpar .imgsubli {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(29, 7, 172, 0.505);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.Parches .orderpar .parch {
+  text-align: center;
+}
+.Parches .orderpar .linksub {
+  text-align: center;
+  margin-left: 75px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.tazones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tazones .titulosubli {
+  margin-top: 50px;
+  text-align: center;
+}
+.tazones .ordertaz {
+  display: inline-flex;
+  gap: 1rem;
+}
+.tazones .ordertaz .imgsubli {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(29, 7, 172, 0.505);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.tazones .ordertaz .parch {
+  text-align: center;
+}
+.tazones .ordertaz .linksub {
+  text-align: center;
+  margin-left: 75px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.poleras .titulosubli {
+  margin-top: 50px;
+  text-align: center;
+}
+.poleras .orderpol {
+  display: inline-block;
+  margin-inline: 40px;
+}
+.poleras .orderpol .imgsubli {
+  height: 200px;
+  width: 200px;
+  background-color: rgba(29, 7, 172, 0.505);
+  border-radius: 10px;
+  margin-top: 50px;
+}
+.poleras .orderpol .parch {
+  text-align: center;
+}
+.poleras .orderpol .linksub {
+  text-align: center;
+  margin-left: 75px;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+/***************************************************/
+/*Contacto*/
+.titulocont {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.flexcont {
+  display: flex;
+  justify-content: space-evenly;
+}
+.flexcont .form {
+  display: flex;
+  flex-direction: column;
+}
+.flexcont .form .nombre {
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+}
+.flexcont .form .Telefono {
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+}
+.flexcont .form .email {
+  padding: 10px 50px 10px 50px;
+  text-align: center;
+}
+.flexcont .form .menu-opciones .opciones {
+  padding: 3px 61px 3px 61px;
+}
+.flexcont .form .selecs {
+  display: block;
+}
+.flexcont .form .selecs .textoseleccion {
+  display: block;
+  text-align: center;
+}
+.flexcont .form .selmensaje .mensaje {
+  width: 260px;
+  height: 176px;
+}
+.flexcont .form .button .boton {
+  width: 260px;
+  height: 25px;
+}
+
+.subtitulo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.subtitulo .textosubtitulo {
+  margin: 25px;
+}
+
+@media (max-width: 780px) {
+  .flexcont {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "LetraFuente";
+    src: url("../fuente/NovaMono-Regular.ttf");
+}
+/***************************************************/
+
+body{
+    font-family: "LetraFuente";
+    background-color: rgba(100, 81, 240, 0.522);
+    font-size: 1rem;
+
+}
+
+
+.cabecera {
+    .nav{
+        background-color: rgb(12, 12, 61);
+
+        .LogoTienda {
+            width: 115px;
+            height: auto;
+            border-radius: 50%;
+            margin: 50px 50px 0px 50px;
+            }
+        .letra-logo {
+            font-family: "LetraFuente";
+            color: rgb(255, 255, 255);
+            margin-left: 50px;
+            text-decoration: none;
+            }
+        
+        .navegacion{
+                display: flex;
+             justify-content: space-evenly;
+                align-items: center;
+                margin-top: 20px;
+                background-image: url("../img/banner.avif");
+                background-size: 100%;
+                font-size: 2rem;
+
+            .nav-a{
+                text-decoration: none; 
+            }
+                
+        }
+    }
+}
+
+/***************************************************/
+/*index-main*/
+.titulopag{
+    margin: 0 center;
+    text-align: center;
+    background-image: url("../img/banner.avif");
+    background-size: 100%;
+    padding-top: 50px;
+}
+
+
+.secord{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .ImagenDestacada {
+        height: 200px;
+        width: 200px;
+        background-color: rgba(29, 7, 172, 0.505);
+        border-radius: 10px;
+        margin-top: 150px;
+    }
+    
+    .Piedefoto{
+        text-align: center;
+    }
+
+    .Linkfoto{
+        text-align: center;
+        margin-left: 75px;
+        text-decoration: none;
+        border-radius: 10px;
+        border: 1px solid white;
+
+        a:visited{
+            color: gray;
+        }
+        
+        a:hover{
+            color:white
+        }
+    
+    }
+
+    
+}
+/***************************************************/
+/*footer*/
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+    background-image: url("../img/banner.avif");
+    padding-bottom: 1rem;
+
+    .derechos{
+        color: white;
+        font-size: 1rem;
+    }
+    
+    .arriba{
+        font-size: 1rem;
+    }
+
+    .insta{
+        font-size: 1rem;
+    }
+
+}
+/***************************************************/
+/*Quienes somos*/
+.flexxx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .quienessomos{
+        margin: 0 center ;
+        text-align: center;
+    }
+    
+    .moch{
+        text-align: center;
+
+        .mochila1{
+            height: 35rem;
+            width: 35rem;
+            border-radius: 20px;
+        }
+    }
+
+    .ord_qu2{
+        text-align: center;
+    }
+
+    .finalquienes{
+        text-align: center;
+        margin-top: 50px;
+    }    
+}
+
+@media (max-width: 768px){
+    .flexxx{
+        display: grid;
+        grid-template-rows: 0fr 1fr 0fr 1fr;   
+    }
+}
+
+@media (max-width: 570px){
+    .flexxx{
+        display: grid;
+        grid-template-rows: 0fr 1fr 0fr 1fr;
+        justify-items: center;
+    }
+}
+/***************************************************/
+/*Pins*/
+.titpins{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.secord-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    .ventapins{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+
+        .orderpins{
+            margin: 75px;
+
+            .imgpin{
+                height: 15rem;
+                width: 15rem;
+                background-color: rgba(29, 7, 172, 0.505);
+                border-radius: 10px;
+            }
+
+            .cenpin{
+                text-align: center;
+            }
+
+            .link-pinsv{
+                text-align: center;
+                margin-left: 75px;
+                text-decoration: none;
+                border-radius: 10px;
+                border: 1px solid white;
+            }
+        }
+    }
+}
+/***************************************************/
+/*Sublimacion*/
+
+.togglenav{
+    margin: 50px 0px 0px 50px;
+    
+    .navto{
+        margin-right: 50px;
+    }
+
+    .navt{
+        margin-right: 50px;
+    }
+}
+
+.Parches{
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: space-evenly;
+
+    .titulosubli{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .orderpar{
+        display: inline-block;
+        margin-inline: 40px;
+
+        .imgsubli{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(29, 7, 172, 0.505);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .parch{
+            text-align: center;
+        }
+
+        .linksub{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+    }
+}
+.tazones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .titulosubli{
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .ordertaz{
+        display: inline-flex;
+        gap: 1rem;
+
+        .imgsubli{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(29, 7, 172, 0.505);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .parch{
+            text-align: center;
+        }
+
+        .linksub{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+    }
+}
+
+.poleras{
+    .titulosubli{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .orderpol{
+        display: inline-block;
+        margin-inline: 40px;
+
+        .imgsubli{
+            height: 200px;
+            width: 200px;
+            background-color: rgba(29, 7, 172, 0.505);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .parch{
+            text-align: center;
+        }
+
+        .linksub{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+    }
+}
+/***************************************************/
+/*Contacto*/
+.titulocont{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.flexcont{
+    display: flex;
+    justify-content: space-evenly;
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+
+        .nombre{
+            padding:10px 50px 10px 50px;
+            text-align: center;
+        }
+
+        .Telefono{
+            padding: 10px 50px 10px 50px;
+            text-align: center;
+        }
+
+        .email{
+            padding: 10px 50px 10px 50px;
+            text-align: center;
+        }
+        
+        .menu-opciones{
+            .opciones{
+                padding: 3px 61px 3px 61px; 
+            }
+        }
+
+        .selecs{
+            display: block;
+
+            .textoseleccion{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .selmensaje{
+            .mensaje{
+                width: 260px;
+                height: 176px;
+            }
+        }
+
+        .button{
+            .boton{
+                width: 260px;
+                height: 25px;
+            }            
+        }
+    }
+}
+
+.subtitulo{
+    text-align: center;
+    margin-bottom: 50px;
+
+    .textosubtitulo{
+        margin: 25px
+    }
+}
+
+
+@media (max-width:780px) { .flexcont{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+}
+
