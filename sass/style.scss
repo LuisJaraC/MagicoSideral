@@ -35,9 +35,9 @@ body{
             text-decoration: none;
             }
         
-        .navegacion{
+    .navegacion{
                 display: flex;
-             justify-content: space-evenly;
+                justify-content: space-evenly;
                 align-items: center;
                 margin-top: 20px;
                 background-image: url("../img/banner.avif");
@@ -46,7 +46,7 @@ body{
 
             .nav-a{
                 text-decoration: none; 
-            }
+                }
                 
         }
     }
@@ -64,21 +64,21 @@ body{
 
 
 .secord{
+    margin-left: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 
     .ImagenDestacada {
-        height: 200px;
-        width: 200px;
+        height: auto;
+        max-width: 200px;
         background-color: rgba(29, 7, 172, 0.505);
         border-radius: 10px;
         margin-top: 150px;
     }
     
     .Piedefoto{
-        text-align: center;
+        margin: 0 center;
     }
 
     .Linkfoto{
@@ -96,10 +96,39 @@ body{
             color:white
         }
     
-    }
-
-    
+    }    
 }
+
+@media (max-width:445px){
+    .secord{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width:446px) and (max-width:767px){
+    .secord{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+}
+@media (min-width:768px) and (max-width:1250px){
+    .secord{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+}
+
+@media (min-width:1251px){
+    .secord{
+        display:flex;
+        justify-content: space-between;
+    }
+}
+
 /***************************************************/
 /*footer*/
 .footer{
@@ -125,22 +154,25 @@ body{
 }
 /***************************************************/
 /*Quienes somos*/
+
+
 .flexxx{
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     .quienessomos{
-        margin: 0 center ;
         text-align: center;
     }
     
     .moch{
+        max-width: 100%;
+        height: auto;
         text-align: center;
 
         .mochila1{
-            height: 35rem;
-            width: 35rem;
+            max-width: 100%;
+            height: auto;
             border-radius: 20px;
         }
     }
@@ -155,90 +187,109 @@ body{
     }    
 }
 
-@media (max-width: 768px){
+@media (max-width:445px){
     .flexxx{
-        display: grid;
-        grid-template-rows: 0fr 1fr 0fr 1fr;   
+        display: flex;
+        .moch{
+            .mochila1{
+                max-width: 100%;
+            }
+        }
     }
 }
 
-@media (max-width: 570px){
-    .flexxx{
-        display: grid;
-        grid-template-rows: 0fr 1fr 0fr 1fr;
-        justify-items: center;
-    }
-}
 /***************************************************/
 /*Pins*/
 .titpins{
-    margin-top: 50px;
     text-align: center;
 }
 
 .secord-1{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
 
     .ventapins{
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        margin-left: 1rem;
+        
 
-        .orderpins{
-            margin: 75px;
 
-            .imgpin{
-                height: 15rem;
-                width: 15rem;
-                background-color: rgba(29, 7, 172, 0.505);
-                border-radius: 10px;
+        .imgpin{
+            height: auto;
+            max-width: 200px;
+            background-color: rgba(29, 7, 172, 0.505);
+            border-radius: 10px;
+        }
+
+        .link-pinsv{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+
+            a:visited{
+                color: gray;
             }
-
-            .cenpin{
-                text-align: center;
-            }
-
-            .link-pinsv{
-                text-align: center;
-                margin-left: 75px;
-                text-decoration: none;
-                border-radius: 10px;
-                border: 1px solid white;
+        
+            a:hover{
+                color:white
             }
         }
     }
+}
+
+@media (max-width:447px){
+    .secord-1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 448px) and (max-width: 767px){
+    .secord-1{
+        margin: 0;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+        .ventapins{
+            .imgpin{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 948px){
+    .secord-1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        justify-items: center;
+    }
+
 }
 /***************************************************/
 /*Sublimacion*/
 
 .togglenav{
-    margin: 50px 0px 0px 50px;
-    
-    .navto{
-        margin-right: 50px;
-    }
-
-    .navt{
-        margin-right: 50px;
-    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .Parches{
-    display: flex;
-    flex-wrap: wrap;
-    justify-self: space-evenly;
-
-    .titulosubli{
-        margin-top: 50px;
-        text-align: center;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-left: 5rem;
 
     .orderpar{
-        display: inline-block;
-        margin-inline: 40px;
+        
 
         .imgsubli{
             height: 200px;
@@ -248,9 +299,6 @@ body{
             margin-top: 50px;
         }
 
-        .parch{
-            text-align: center;
-        }
 
         .linksub{
             text-align: center;
@@ -261,30 +309,20 @@ body{
         }
     }
 }
-.tazones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
-    .titulosubli{
-        margin-top: 50px;
-        text-align: center;
-    }
+
+.tazones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 5rem;
 
     .ordertaz{
-        display: inline-flex;
-        gap: 1rem;
-
         .imgsubli{
             height: 200px;
             width: 200px;
             background-color: rgba(29, 7, 172, 0.505);
             border-radius: 10px;
             margin-top: 50px;
-        }
-
-        .parch{
-            text-align: center;
         }
 
         .linksub{
@@ -297,15 +335,15 @@ body{
     }
 }
 
+.titulosubli{
+    margin-top: 50px;
+    text-align: center;
+}
 .poleras{
-    .titulosubli{
-        margin-top: 50px;
-        text-align: center;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5rem;
     .orderpol{
-        display: inline-block;
-        margin-inline: 40px;
-
         .imgsubli{
             height: 200px;
             width: 200px;
@@ -313,11 +351,6 @@ body{
             border-radius: 10px;
             margin-top: 50px;
         }
-
-        .parch{
-            text-align: center;
-        }
-
         .linksub{
             text-align: center;
             margin-left: 75px;
@@ -325,6 +358,92 @@ body{
             border-radius: 10px;
             border: 1px solid white;
         }
+    }
+}
+@media (max-width: 445px){
+    .Parches{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tazones{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .poleras{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 446px) and (max-width: 767px){
+    .Parches{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+    .tazones{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+    .poleras{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 948px){
+    .Parches{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin: 2rem;
+    }
+    .tazones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 3rem;
+    }
+    .poleras{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin:2rem;
+    }
+}
+
+@media (min-width:949px) and (max-width: 1080px){
+    .Parches{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        margin: 2rem;
+    }
+    
+    .tazones{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        margin: 2rem;
+    }
+    .poleras{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        margin: 2rem;
     }
 }
 /***************************************************/
@@ -391,10 +510,10 @@ body{
 
 .subtitulo{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 2rem;
 
     .textosubtitulo{
-        margin: 25px
+        margin: 1rem;
     }
 }
 
