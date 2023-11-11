@@ -1,0 +1,42 @@
+.titpins{
+    text-align: center;
+}
+
+.secord-1{
+    margin-left: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    
+
+    .ventapins{
+        margin-left: 1rem;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        .imgpin{
+            height: auto;
+            max-width: 200px;
+            background-color: $colorImagenes;
+            border-radius: 10px;
+        }
+
+        .link-pinsv{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+
+            &:visited{
+                color: gray;
+            }
+
+            &:hover{
+                color:white
+            }
+        }
+    }
+}

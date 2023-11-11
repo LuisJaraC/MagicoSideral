@@ -1,0 +1,136 @@
+@media (max-width:445px) { 
+    .flexcont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .formulario{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+            .maps{
+                width: 100%;
+                height: auto;
+    
+                .mapa{
+                    width: 100%;
+                    height:auto;
+                }
+            }   
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+        }
+        .textocomo{
+            .textosubtitulo{
+                font-size: 0.8rem;
+                text-align: justify;
+                margin: 0.5rem
+            }    
+        }
+    }
+        
+}
+
+
+@media (min-width:446px) and (max-width:767px){
+    .flexcont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+
+        .formulario{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+
+            .maps{
+                width: 80%;
+                .mapa{
+                    width: 100%;
+                }
+            }
+            .form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .textocomo{
+            .textosubtitulo{
+                font-size: 1rem;
+                text-align: justify;
+                margin: 1rem;
+            }    
+        }
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+    .flexcont{
+        .formulario{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            .maps{
+                width: 200%;
+                height: auto;
+                .mapa{
+                    width: 200%;
+                    height:auto;
+                }
+            }
+            .form{
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        
+        }
+    .textocomo{
+            display: flex;
+            flex-direction: column;
+            .textosubtitulo{
+                text-align: justify;
+                margin: 2rem;
+            }
+        }
+    }
+}
+
+@media (min-width:1025px){
+    .flexcont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 1rem;
+        .formulario{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center ;
+            margin: 1rem;
+
+            .form{
+                display: flex;
+                align-items: center;
+                margin: 1rem;
+            }
+        }
+    .textocomo{
+        .textosubtitulo{
+            text-align: justify;
+        }
+    }
+    }
+}

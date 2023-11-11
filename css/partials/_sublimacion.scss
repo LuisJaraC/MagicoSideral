@@ -1,0 +1,111 @@
+.togglenav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+    .stylenav{
+        margin-top: 1.5rem;
+        text-decoration: none;
+        background-color: lightblue;
+        border-radius: 10px;
+        padding: 0.5rem;
+        transition: 0.5s;
+
+        &:hover{
+            color: red;
+            transform: scale(1.1);
+        }
+    }
+    
+}
+
+.Parches{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-left: 5rem;
+    
+
+    .orderpar{
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+
+        .imgsubli{
+            height: 200px;
+            width: 200px;
+            background-color: $colorImagenes;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+
+        .linksub{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+    }
+}
+
+
+.tazones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 5rem;
+
+    .ordertaz{
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .imgsubli{
+            height: 200px;
+            width: 200px;
+            background-color: $colorImagenes;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        .linksub{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+    }
+}
+
+.titulosubli{
+    margin-top: 50px;
+    text-align: center;
+}
+.poleras{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 5rem;
+    .orderpol{
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .imgsubli{
+            height: 200px;
+            width: 200px;
+            background-color: $colorImagenes;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .linksub{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+        }
+    }
+}

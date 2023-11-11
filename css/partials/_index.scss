@@ -1,0 +1,52 @@
+.titulopag{
+    margin: 0 center;
+    text-align: center;
+    background-image: url("../img/banner.avif");
+    background-size: 100%;
+    padding-top: 50px;
+}
+
+
+.secord{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .ordendiv{
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        .ImagenDestacada {
+            height: auto;
+            max-width: 200px;
+            background-color: $colorImagenes;
+            border-radius: 10px;
+            margin-top: 150px;
+        }
+        
+        .Piedefoto{
+            margin: 0 center;
+        }
+    
+        .Linkfoto{
+            text-align: center;
+            margin-left: 75px;
+            text-decoration: none;
+            border-radius: 10px;
+            border: 1px solid white;
+    
+            &:visited{
+                color: gray;
+            }
+            
+            &:hover{
+                color:white
+            }
+        
+        }    
+    }
+    
+
+    }
+

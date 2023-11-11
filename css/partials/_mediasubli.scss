@@ -1,0 +1,86 @@
+@media (max-width: 445px){
+    .Parches{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tazones{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .poleras{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 446px) and (max-width: 767px){
+    .Parches{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+    .tazones{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+    .poleras{
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        justify-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 948px){
+    .Parches{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin: 2rem;
+    }
+    .tazones{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 3rem;
+    }
+    .poleras{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin:2rem;
+    }
+}
+
+@media (min-width:949px) and (max-width: 1080px){
+    .Parches{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        margin: 2rem;
+    }
+    
+    .tazones{
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        justify-items: center;
+        margin: 2rem;
+    }
+    .poleras{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        margin: 2rem;
+    }
+}

@@ -1,0 +1,30 @@
+.flexxx{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .quienessomos{
+        text-align: center;
+    }
+    
+    .moch{
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+
+        .mochila1{
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    }
+
+    .ord_qu2{
+        text-align: center;
+    }
+
+    .finalquienes{
+        text-align: center;
+        margin-top: 50px;
+    }    
+}

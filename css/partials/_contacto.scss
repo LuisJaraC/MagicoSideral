@@ -1,0 +1,69 @@
+.titulocont{
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.flexcont{
+    display: flex;
+    justify-content: space-evenly;
+    
+    .form{
+        display: flex;
+        flex-direction: column;
+
+        .nombre{
+            padding:10px 50px 10px 50px;
+            text-align: center;
+        }
+
+        .Telefono{
+            padding: 10px 50px 10px 50px;
+            text-align: center;
+        }
+
+        .email{
+            padding: 10px 50px 10px 50px;
+            text-align: center;
+        }
+        
+        .menu-opciones{
+            .opciones{
+                padding: 3px 61px 3px 61px; 
+            }
+        }
+
+        .selecs{
+            display: block;
+
+            .textoseleccion{
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .selmensaje{
+            .mensaje{
+                width: 260px;
+                height: 176px;
+            }
+        }
+
+        .button{
+            .boton{
+                width: 260px;
+                height: 25px;
+            }            
+        }
+    }
+}
+.textocomo{
+    .subtitulo{
+        text-align: center;
+        margin-bottom: 2rem;
+    
+        .textosubtitulo{
+            margin: 1rem;
+        }
+    }    
+}
